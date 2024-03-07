@@ -9,6 +9,7 @@ class Palestra
     private $tema;
     private $sala;
     private $ministrante;
+    private $participantes;
 
     public function __construct($nome, $data, $turno, $duracao, $tema, $sala, $ministrante)
     {
@@ -89,5 +90,15 @@ class Palestra
     public function setMinistrante(Ministrante $ministrante) : void
     {
         $this->ministrante = $ministrante;
+    }
+
+    public function getParticipantes() : array|bool
+    {
+        return $this->participantes;
+    }
+
+    public function setParticipante(Participante $participante) : void
+    {
+        $this->participantes = $participante;
     }
 }

@@ -78,4 +78,14 @@ class Evento
     {
         $this->palestras[] = (array) $palestra;
     }
+
+    public function getParticipantes() : array
+    {
+        return $this->participantes;
+    }
+
+    public function setParticipante(Participante $participante) : void
+    {
+        $this->participantes[] = $participante;
+    }
 }

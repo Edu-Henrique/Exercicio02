@@ -7,6 +7,14 @@ abstract class Pessoa
     protected $endereco;
     protected $email;
 
+    public function __construct($nome, $fone, $endereco, $email)
+    {
+        $this->setNome($nome);
+        $this->setFone($fone);
+        $this->setEndereco($endereco);
+        $this->setEmail($email);
+    }
+
     public function getNome() : string
     {
         return $this->nome;
